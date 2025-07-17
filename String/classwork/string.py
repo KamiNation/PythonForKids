@@ -23,6 +23,27 @@
 # “A string is anything you’d say out loud or write in a 
 # text message  wrapped in quotes!”
 
+# Bonus Challenge Ideas (Based on Your Code):
+# Print a birthday message using a name in a string.
+
+# Make a multi-line poem using triple quotes.
+
+# Use type() to check if "123" is a string or a number.
+
+# Join two strings using +.
+
+# Join two strings using f-string.
+
+# Make a string with an apostrophe using double quotes.
+
+# Make a string with a double quote inside (hint: use single quotes).
+
+# Print a string version of a number, then do math with the real number.
+
+# Add your name to a sentence using f"{name} is coding!".
+
+# Create a string that says:
+# "Python is fun!\nI love it.\nLet’s keep learning!"
 
 
 
