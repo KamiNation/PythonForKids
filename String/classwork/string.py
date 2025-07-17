@@ -19,52 +19,64 @@
 # If it doesn’t have quotes → Python thinks it’s a number, 
 # a command, or a variable.
 
-# 🧠 Easy Analogy:
+# Easy Analogy:
 # “A string is anything you’d say out loud or write in a 
-# text message — wrapped in quotes!”
+# text message  wrapped in quotes!”
 
 
 
 
-
+# Single quotes can hold strings
 single_quote = 'I am a single quote'
 print("single quote =>", single_quote)
 
-
-
+# This can break if there's an apostrophe inside
+# The apostrophe in "Field's" ends the string too early
+# That's why double quotes are better here
 single_quote_error = "Flourish Field's academy"
-print("single quote error=>", single_quote_error)
+print("single quote with apostrophe =>", single_quote_error)
 
+# Double quotes can also hold strings (good when using apostrophes inside)
 double_quote = "I am a double quote"
 print("double quote =>", double_quote)
 
+# Triple single quotes can hold multi-line strings (like a poem or a letter!)
 single_multi_string = ''' 
 A B C D E F
 G H I J K L
 M N O P Q R
 '''
-print("SINGLE_multi_string =>", single_multi_string)
+print("SINGLE multi-line string =>", single_multi_string)
 
+# Triple double quotes do the same thing!
 double_multi_string = """ 
 J K L M N
 O P Q R S
 T U V W X
 """
-print("DOUBLE_multi_string =>", double_multi_string)
+print("DOUBLE multi-line string =>", double_multi_string)
 
+# Numbers in quotes are still strings (they look like numbers, but are actually text!)
 number_string = "40"
 print("number_string =>", number_string)
-print("number_string =>", type(number_string))
+print("number_string type =>", type(number_string))
 
+# Numbers without quotes are real numbers (integers)
 number_number = 40
-
 print("number_number =>", number_number)
-print("number_number =>", type(number_number))
+print("number_number type =>", type(number_number))
 
-tomisin = "Tomisin "
+# You can combine strings using + or f-strings
+tomisin = "Tomisin"
 peter = "Peter"
-# message = tomisin + " and " + peter + " are learning string in python"
-message =  f"{tomisin} and {peter} are learning string in python"
-message0ne = f"{double_multi_string} and {single_multi_string}"
-print("message =>", message)
-print("message =>", message0ne)
+# Using + to join strings
+message = tomisin + " and " + peter + " are learning strings in Python!"
+print("message (with +) =>", message)
+
+# Using f-string (easier and cleaner!)
+message_f = f"{tomisin} and {peter} are learning strings in Python!"
+print("message (with f-string) =>", message_f)
+
+# You can even mix in multi-line strings
+fun_message = f"{double_multi_string}\n---\n{single_multi_string}"
+print("fun message with multi-lines =>", fun_message)
