@@ -5,17 +5,29 @@
 
 # Example Explanation:
 # Imagine your computer is your friend. When it says:
-# “What’s your name?”   you type: Zara
+# “What’s your name?”   you type: Peter
 # That’s input   you’re giving your answer to the computer, 
 # and it listens!
 
 # 🧩 The Questions:
 # Ask the user: "What is your name?"
 # Save it in a variable called yourName. (Datatype: string)
+myName = "Peter is my name"
+print("myName =>", myName)
+
+yourName = input("What is your name? ")
+print("yourName =>", f'{yourName}', "Nice to meet you!")
+
+
 
 # Ask: "How old are you?"
 # Save the answer in a variable called yourAge. 
 # (Datatype: string   can be converted to number later)
+yourAge = input("How old are you? ")
+print("Your age =>", yourAge)
+
+
+
 
 # Ask: "What is your favorite color?"
 # Save the answer in favouriteColor.
@@ -42,11 +54,11 @@
 # What is the datatype of anything you get using input() 
 # is it a number, a word, or something else?
 
-name = "My name is Tosisn peter"
+# name = "My name is Tosisn peter"
 
-print(name)
+# print(name)
 
-inputName = input("What is your name?: ")
+# inputName = input("What is your name?: ")
 
-print(f"{inputName}, nice meeting you")
+# print(f"{inputName}, nice meeting you")
 

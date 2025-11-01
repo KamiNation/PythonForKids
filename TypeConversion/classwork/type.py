@@ -12,7 +12,15 @@
 # Water → Steam    =>	int → str
 
 # Example Explanation for Kids:
-# Let’s say someone types “5” 
+# Let’s say someone types “5”
+# inputNumber = input("Enter a number: ")
+# addInputNumber = 10 + int(inputNumber)
+# addFloatnumber = 10 + float(inputNumber)
+# print("You entered:", inputNumber) 
+
+# print("Adding 10 to your number gives:", addInputNumber)  # This will crash because inputNumber is a string,
+# print("Adding 10.0 to your number gives:", addFloatnumber)  # This will crash because inputNumber is a string,
+
 # but that’s a string, not a real number.
 # You want to add that “5” to another number, like 10.
 # But Python says: “Wait! You’re trying to add a word to a number! 
@@ -82,3 +90,42 @@
 # ➤ Can you convert this string into a real boolean value in Python?
 # (Hint: Try bool(data) — what does it return?)
 
+
+# stringNumber = input("Enter a number: ")
+# addNumber = 8 + int(stringNumber)
+# addNumber = 8 + stringNumber
+
+# print("addNumber =>", addNumber)
+# This will crash because you can't add a string and an integer directly.
+
+
+# You have the number 25 as an integer. Change it into a string and join it with the word "years".
+# number as an integer
+number25 = 25
+print("Number25 has an integer =>", type(number25))
+
+# converting number25 to a string
+changedNumber = str(number25)
+print("changeNumber has a string =>", type(changedNumber))
+
+# joining the string with the word "years"
+methodOne = "I am " + changedNumber + " years old."
+print("Method One =>", methodOne)
+
+methodTwo = f"I am {changedNumber} years old"
+print("Method Two =>", methodTwo)
+
+
+unchangedNumber = "3.4" # string value, 3 to 3 integer and not 3.4 string integer to 3.4 integer
+print("unchangedNumber has a string =>", type(unchangedNumber))
+# converting unchangedNumber to a float then to an integer
+# mychangedNumber = int(unchangedNumber)  # This will crash because "3.4" is not an integer string
+notmychangedNumber = float(unchangedNumber)  # This will convert to float but not to int
+# So we first convert to float, then to int to avoid crashing
+changedNumber = int(float(unchangedNumber))
+print("changedNumber has an integer =>", type(changedNumber))
+print("changedNumber =>", changedNumber)
+print("notmychangedNumber has a float =>", type(notmychangedNumber))
+print("notmychangedNumber =>", notmychangedNumber)
+# print("my changedNumber has an integer =>", type(mychangedNumber))
+# print("my changedNumber =>", mychangedNumber)

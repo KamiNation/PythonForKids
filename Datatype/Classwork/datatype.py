@@ -11,8 +11,14 @@
 # int	Whole numbers	5, 22, 0
 # float	Numbers with decimals	3.14, 10.0, 0.5
 # bool	True or False	True, False
-# list	A group of things	["book", "pen", "eraser"], [1, 2, 3]
+# list	A group of things	["book", "pen", "eraser"], [1, 2, 3], []
 # dict	A pair of label and value	{"hero": "Spiderman"}
+
+# example of dict - personal data
+personalData = ["tomisin", 11, "5'4"]
+personalDataDict = {"name": "tomisin",
+                    "age": 11, 
+                    "height": "5'4"}
 
 # ✨ Tip: Every time you create something in Python, 
 # it's like putting a value inside one of these boxes!

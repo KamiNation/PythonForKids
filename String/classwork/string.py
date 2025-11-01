@@ -8,7 +8,7 @@
 # Python treats it as a string.
 
 
-# we use the "", and anything within the "is a string"
+# we use the "", and anything within this "is a string"
 # single_string = ''
 # double_string = ""
 
@@ -22,8 +22,14 @@
 
 
 # Single quotes can hold strings
-single_quote = 'I am a single quote'
+# single_quote = 'Tomisin does not understand string'
+# single_quote = 'Tomisin does not understand string'
+single_quote = "Flourish Field's academy" 
+
+
 print("single quote =>", single_quote)
+print("single quote =>", type(single_quote))
+
 
 # This can break if there's an apostrophe inside
 # The apostrophe in "Field's" ends the string too early
@@ -61,14 +67,15 @@ number_number = 40
 print("number_number =>", number_number)
 print("number_number type =>", type(number_number))
 
-# You can combine strings using + or f-strings
+# You can combine strings using + or f-strings (string concatenation)
 tomisin = "Tomisin"
 peter = "Peter"
 # Using + to join strings
-message = tomisin + " and " + peter + " are learning strings in Python!"
+message = "My name is " + tomisin + " and my surname is " + peter 
 print("message (with +) =>", message)
 
 # Using f-string (easier and cleaner!)
+
 message_f = f"{tomisin} and {peter} are learning strings in Python!"
 print("message (with f-string) =>", message_f)
 
@@ -79,7 +86,7 @@ print("fun message with multi-lines =>", fun_message)
 
 #  1. What is an f-string?
 # Think of it as a magic sentence that lets you plug in your variables easily.
-name = "Tomisin"
+name = input("Enter your name: ")
 age = 11
 print(f"My name is {name} and I am {age} years old.")
 
@@ -88,10 +95,56 @@ print(f"My name is {name} and I am {age} years old.")
 print("My name is " + name + " and I am " + str(age) + " years old.")
 
 # With f-string
-print(f"My name is {name} and I am {age} years old.")
+# print(f"My name is {name} and I am {age} years old.")
 # Explain: The f-string is shorter and easier to understand.
 
 # 📘 Fun Real-World Analogy:
 # Imagine your f-string is a sentence with blank spaces. 
 # You just fill in the blanks with variables like a Mad Libs game!
 
+
+
+# String,' 
+# Combine three words into one sentence. 
+name = "Alice"
+location = "Wonderland"
+activity = "exploring"
+
+one_sentence = f"I am {name} and i am in {location} {activity}"
+print(one_sentence)
+
+# Make a string math that says "2 + 2 = 4" 
+first_number = "2"
+second_number = "2"
+add_result = f"{first_number} + {second_number} = 4"
+print(add_result)
+
+# Create word and print the first letter using indexing. 
+                #0123456
+indexOfLetter = "Tomisin"
+print(indexOfLetter[6])
+print(len(indexOfLetter))
+
+
+
+# Make a string repeat and repeat it 3 times. 
+
+
+
+# Create story using several variables inside an f-string.
+language = "Python"
+level = "master"
+name = "Tomisin"
+storyboard = f"{name} is a {level} of {language} language"
+print(storyboard)
+
+# Use f-string to say "Hello, my name is [name]". 
+name = "Tomisin"
+print(f"my name is {name}")
+
+
+# Combine firstName = "Tom" and lastName = "Jerry" into fullName. 
+firstName = "Tomisin"
+lastName = "Python"
+fullName = f"{firstName} {lastName}"
+print(fullName)
